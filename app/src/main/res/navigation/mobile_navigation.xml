@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.worldbt.fanbt.ui.main.MainFragment"
+        android:label="main"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_nav_main_to_nav_start"
+            app:destination="@id/nav_start" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.worldbt.fanbt.ui.game.start.StartFragment"
+        android:label="main"
+        tools:layout="@layout/start_fragment">
+        <action
+            android:id="@+id/action_nav_start_to_nav_quiz"
+            app:destination="@id/nav_quiz" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.worldbt.fanbt.ui.game.quiz.QuizFragment"
+        android:label="main"
+        tools:layout="@layout/dream_fragment">
+
+        <action
+            android:id="@+id/action_nav_quiz_to_nav_quiz"
+            app:destination="@id/nav_quiz"
+            app:popUpTo="@+id/nav_start"/>
+
+    </fragment>
+
+
+</navigation>

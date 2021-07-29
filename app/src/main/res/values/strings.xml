@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FANBT</string>
+    <string name="task_next">Дальше</string>
+    <string name="task_previous">Назад</string>
+    <string name="task_end">Завершить</string>
+    <string name="image_description_default">image</string>
+    <string name="internet_error">No internet connection.\nSwipe to refresh the page</string>
+    <string name="dreams_title">FANBT</string>
+</resources>
